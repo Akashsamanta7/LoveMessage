@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Miss U</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif}
+
+body{
+min-height:100vh;
+background:
+radial-gradient(circle at center,rgba(0,0,0,.25),transparent 65%),
+radial-gradient(circle at top left,#ffd6e8,transparent 55%),
+radial-gradient(circle at bottom right,#f7b6cf,transparent 55%),
+linear-gradient(135deg,#fff0f6,#fde2ec);
+display:flex;
+align-items:center;
+justify-content:center;
+padding:2rem;
+}
+
+/* FILM GRAIN */
+body::after{
+content:"";
+position:fixed;inset:0;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+pointer-events:none;
+z-index:1;
+}
+
+/* CARD */
+.container{
+background:#fff;
+max-width:720px;
+width:100%;
+border-radius:28px;
+padding:3rem 2.8rem;
+box-shadow:0 30px 70px rgba(0,0,0,.25);
+z-index:2;
+animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px) scale(.96)}
+to{opacity:1;transform:translateY(0) scale(1)}
+}
+
+h1{
+color:#e75480;
+font-size:2.2rem;
+text-align:center;
+margin-bottom:1.2rem;
+}
+
+.section{
+margin-top:2.2rem;
+}
+
+.section h2{
+color:#b83b64;
+font-size:1.35rem;
+margin-bottom:.6rem;
+}
+
+.section p{
+color:#6d3a4a;
+line-height:1.7;
+font-size:16px;
+}
+
+/* PRICING */
+.price-box{
+margin-top:1.4rem;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:16px;
+}
+
+.price-card{
+background:linear-gradient(135deg,#f7a8c6,#fdd6e6);
+border-radius:20px;
+padding:1.4rem;
+text-align:center;
+}
+
+.price-card h3{
+  color: #b83b64;
+  font-size:1.6rem;
+  margin-bottom:.8rem;
+}
+
+.price-card h4{
+    color: #910731;
+    font-size: 20px
+}
+
+.features{
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:left;
+  font-size:.95rem;
+  line-height:1.8;
+  color:#6d3a4a;
+}
+
+.price{
+  font-size:20rem;
+  font-weight:900;
+  margin-top:1.2rem;
+  color:#cf3463;
+}
+
+
+
+/* CONTACT */
+.contact-box{
+margin-top:1.4rem;
+background:#fff0f6;
+border-radius:20px;
+padding:1.4rem;
+line-height:1.8;
+color:#6d3a4a;
+}
+
+/* FOOTER */
+.footer{
+margin-top:2.6rem;
+text-align:center;
+font-size:.9rem;
+color:#8a4a62;
+}
+
+.btn{
+display:inline-block;
+margin-top:1.6rem;
+padding:.75rem 2.2rem;
+border-radius:30px;
+background:linear-gradient(135deg,#e75480,#f08fb0);
+color:#fff;
+text-decoration:none;
+font-size:1rem;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 12px 25px rgba(231,84,128,.35);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Contact Us 💗</h1>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>What is this?</h2>
+    <p>
+      This is a personalised digital memory experience designed to capture emotions,
+      moments, and stories in a unique interactive format. It is not just a website —
+      it is a feeling crafted with care.
+    </p>
+  </div>
+
+  <!-- WHY -->
+  <div class="section">
+    <h2>Why you may need this</h2>
+    <p>
+      Whether it’s for someone you miss, someone you love, or memories you want to
+      preserve forever — this experience helps you express emotions in a way words
+      alone cannot.
+    </p>
+  </div>
+
+    <!-- Need -->
+  <div class="section">
+    <h2>Requirment for this </h2>
+    <p>1. A Github account is needed.</p>
+    <p>2. If Github account not available then ₹30 + plan selected.</p>
+  </div>
+
+  <!-- PRICING -->
+  <div class="section">
+    <h2>Pricing</h2>
+    <div class="price-box">
+
+  <!-- BASIC -->
+  <div class="price-card">
+    <h3>Basic</h3>
+
+    <ul class="features">
+      <li>✔ Single static page</li>
+      <li>✔ Fixed layout</li>
+      <li>✔ limited music option</li>
+      <li>✖ No memory album </li>
+      <li>✖ No animations or transitions</li>
+      <li>✖ No custom QR for the start</li>
+      <li>✖ No revisions</li>
+    </ul>
+
+    <h4 class="price">₹199</h4>
+  </div>
+
+  <!-- STANDARD -->
+  <div class="price-card">
+    <h3>Standard</h3>
+
+    <ul class="features">
+      <li>✔ Multi-step interactive flow</li>
+      <li>✔ Memory slideshow (only 8 photos)</li>
+      <li>✔ Smooth animations</li>
+      <li>✔ Custom captions</li>
+      <li>✔ Custom Background music</li>
+      <li>✔ Basic QR Available</li>
+      <li>✔ only 2 revisions</li>
+      <li>✖ No fully custom music</li>
+      <li>✖ Limited personalization</li>
+    </ul>
+
+    <h4 class="price">₹349</h4>
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="price-card">
+    <h3>Premium</h3>
+
+    <ul class="features">
+      <li>✔ Fully custom experience</li>
+      <li>✔ up to 20 photos (Max limit)</li>
+      <li>✔ Custom music of choice</li>
+      <li>✔ Advanced animations & transitions</li>
+      <li>✔ Personal story flow</li>
+      <li>✔ Priority delivery</li>
+      <li>✔ Multiple revisions</li>
+    </ul>
+
+    <h4 class="price">₹499</h4>
+  </div>
+</div>
+
+  <!-- CONTACT DETAILS -->
+  <div class="section">
+    <h2>Get in touch</h2>
+
+    <div class="contact-box">
+      📧 Email: adXXXwoXXd@gmail.com<br>
+      📞 Phone: +91 98XXX 4XX10<br>
+      📍 Location: Kolkata, India<br>
+      🕒 Response time: Within 24 hours
+    </div>
+
+    <div style="text-align:center">
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 • Crafted with care and emotion
+  </div>
+
+</div>
+</body>
+</html>
